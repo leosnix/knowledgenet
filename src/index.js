@@ -1,25 +1,40 @@
 /* @flow */
+'use strict';
 
-import express from 'express';
-import bodyParser from 'body-parser';
-import multer from 'multer';
-import morgan from 'morgan';
+import co from 'co';
+import dbConnect from './dbConnect.js';
+import initTree from './initTree.js';
+import server from './server.js';
+// import colors from 'colors';
+import dbVgenerator from './dbVgenerator.js';
 
-const app = express();
-const upload = multer();
 
-app.use(express.static(__dirname + '/../public'));
-app.use(morgan('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// mongoose connection
+// var mongoose = require('mongoose');
+// let TreeNode = require('./models/TreeNode.js');
+// TreeNode();
 
-import dogs from './routes/dogs';
-app.use('/dogs', dogs);
+console.log('***STARTING SERVER***');
 
-app.get('/hello', (req, res) => {
-  res.send('Hello Earth!');
+let initProcess = co(function*() {
+  console.log('db starting...');
+  let db= yield dbConnect();
+  //
+  // let dbV = yield dbVgenerator(db);
+  // dbV.set('test', 'me');
+  // dbV.set('test2', 'me2');
+  // dbV.set('test3', 'me3');
+  // console.log('dbVPromie done');
+  // console.log(dbV.get('test3'));
+  //
+  console.log('db OK');
+  // yield initTree(db);
+  return db;
+}).catch(function(err) {
+// error
+console.error('Init in index.js failed (co-Iterator)');
+console.error(err.stack);
 });
 
-const server = app.listen(3000, function () {
-  console.log('Express listening on port 3000');
-});
+// server should get db
+initProcess.then(server);

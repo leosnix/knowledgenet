@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+TreeNodeSchema.methods.deleteNoSav	src/models/TreeNode.js	/^};$/;"	c
+TreeNodeSchema.methods.getChildPosition	src/models/TreeNode.js	/^};$/;"	f
+TreeNodeSchema.methods.getFullPathPromise	src/models/TreeNode.js	/^};$/;"	f
+TreeNodeSchema.methods.moveAfter	src/models/TreeNode.js	/^TreeNodeSchema.methods.moveBefore = function(otherNodeId, cb) {};$/;"	f
+TreeNodeSchema.methods.moveBefore	src/models/TreeNode.js	/^TreeNodeSchema.methods.moveHierarchyDown = function(cb) {};$/;"	f
+TreeNodeSchema.methods.moveHierarchyDown	src/models/TreeNode.js	/^TreeNodeSchema.methods.moveHierarchyUp = function(cb) {};$/;"	f
+TreeNodeSchema.methods.moveHierarchyUp	src/models/TreeNode.js	/^};$/;"	f
+TreeNodeSchema.methods.moveNoSav	src/models/TreeNode.js	/^};$/;"	c
+TreeNodeSchema.methods.registerChildNoSav	src/models/TreeNode.js	/^TreeNodeSchema.methods.moveAfter = function(otherNodeId, cb) {};$/;"	f
+TreeNodeSchema.methods.registerDeleted	src/models/TreeNode.js	/^});$/;"	f
+TreeNodeSchema.methods.setTagNoSav	src/models/TreeNode.js	/^};$/;"	c
+TreeNodeSchema.methods.unregisterChildNoSav	src/models/TreeNode.js	/^};$/;"	f
+a	src/es6/destructuring.js	/^let {a, b, ...props} = {a:1, b:2, c:3, d:{e:4}}$/;"	p
+age	src/es6/destructuring.js	/^let dog = {name: 'fido', age: 3};$/;"	p	class:let
+b	src/es6/destructuring.js	/^let {a, b, ...props} = {a:1, b:2, c:3, d:{e:4}}$/;"	p
+c	src/es6/destructuring.js	/^let {a, b, ...props} = {a:1, b:2, c:3, d:{e:4}}$/;"	p
+d	src/es6/destructuring.js	/^let {a, b, ...props} = {a:1, b:2, c:3, d:{e:4}}$/;"	p
+initTree	src/initTree.js	/^    });$/;"	f
+let	src/models/TreeNode.js	/^};$/;"	f
+module.exports	src/connect.js	/^var uri = 'mongodb:\/\/localhost:27017\/knowledgetree';$/;"	f
+mongodb	src/connect.js	/^var mongodb = require('mongodb');$/;"	v
+name	src/es6/destructuring.js	/^let dog = {name: 'fido', age: 3};$/;"	p	class:let
+product	src/es6/flow.js	/^function product(a: number, b: number){$/;"	f
+uri	src/connect.js	/^var uri = 'mongodb:\/\/localhost:27017\/knowledgetree';$/;"	v
